@@ -1,0 +1,48 @@
+** TOTAL RAISED ** 
+
+TOTAL CONTRIBUTIONS
+1. Individual Contributions
+	total_individual_contributions_period =
+	individual_itemized_contributions_period +
+	individual_unitemized_contributions_period
+2. Candidate Contributions
+	candidate_contribution_period
+3. Party Committe Contributions
+	political_party_committee_contributions_period
+4. Other Committee Contributions
+	other_political_committee_contributions_period
+
+Total Contributions
+	total_contributions_period =
+	total_individual_contributions_period +
+	candidate_contribution_period +
+	political_party_committee_contributions_period +
+	other_political_committee_contributions_period
+
+TRANSFERS FROM OTHER AUTHORIZED COMMITTEES
+	transfers_from_other_authorized_committee_period
+
+TOTAL LOANS RECEIVED
+1. Loans made by candidate
+	loans_made_by_candidate_period
+2. Other loans
+	all_other_loans_period
+
+Total Loans
+	total_loans_received_period =
+	loans_made_by_candidate_period +
+	all_other_loans_period
+
+OFFSETS TO OPERATING EXPENDITURES
+	offsets_to_operating_expenditures_period
+
+OTHER RECEIPTS
+	other_receipts_period
+	
+** Total Receipts **
+	total_receipts_period =
+	total_contributions_period +
+	transfers_from_other_authorized_committee_period +
+	total_loans_received_period +
+	offsets_to_operating_expenditures_period +
+	other_receipts_period

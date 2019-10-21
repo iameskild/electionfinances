@@ -1,0 +1,162 @@
+financial_cols = [
+#         'aggregate_amount_personal_contributions_general',
+#         'aggregate_contributions_personal_funds_primary',
+#         'all_loans_received_period',
+#         'all_loans_received_ytd',
+        'all_other_loans_period',    # R
+#         'all_other_loans_ytd', 
+#         'allocated_federal_election_levin_share_period',
+#         'amendment_chain',
+#         'amendment_indicator', 
+#         'amendment_indicator_full',    # Delete
+#         'beginning_image_number',     # Delete
+#         'calendar_ytd',
+        'candidate_contribution_period',    # R
+#         'candidate_contribution_ytd',
+#         'cash_on_hand_beginning_calendar_ytd',
+#         'cash_on_hand_beginning_period',
+#         'cash_on_hand_close_ytd',
+#         'cash_on_hand_end_period', 
+#         'committee_id', 
+#         'committee_name',
+#         'committee_type', 
+#         'coordinated_expenditures_by_party_committee_period',
+#         'coordinated_expenditures_by_party_committee_ytd',
+#         'coverage_end_date', 
+#         'coverage_start_date', 
+#         'csv_url',    # Delete
+#         'cycle', 
+#         'debts_owed_by_committee', 
+#         'debts_owed_to_committee',
+#         'document_description',    # Delete 
+#         'end_image_number',    # Delete
+#         'fec_file_id',    # Delete 
+#         'fec_url',    # Delete
+#         'fed_candidate_committee_contribution_refunds_ytd',
+#         'fed_candidate_committee_contributions_period',
+#         'fed_candidate_committee_contributions_ytd',
+#         'fed_candidate_contribution_refunds_period',
+#         'file_number',    # Delete
+#         'gross_receipt_authorized_committee_general',
+#         'gross_receipt_authorized_committee_primary',
+#         'gross_receipt_minus_personal_contribution_general',
+#         'gross_receipt_minus_personal_contributions_primary', 
+#         'html_url',    # Delete
+#         'independent_expenditures_period',
+#         'independent_expenditures_ytd',
+        'individual_itemized_contributions_period',    # R
+#         'individual_itemized_contributions_ytd',
+        'individual_unitemized_contributions_period',    # R
+#         'individual_unitemized_contributions_ytd', 
+#         'is_amended',
+#         'loan_repayments_candidate_loans_period',    # S
+#         'loan_repayments_candidate_loans_ytd',
+#         'loan_repayments_made_period',
+#         'loan_repayments_made_ytd',
+#         'loan_repayments_other_loans_period',    # S
+#         'loan_repayments_other_loans_ytd',
+#         'loan_repayments_received_period',
+#         'loan_repayments_received_ytd',
+        'loans_made_by_candidate_period',    # R 
+#         'loans_made_by_candidate_ytd',
+#         'loans_made_period',
+#         'loans_made_ytd',
+#         'means_filed',    # Delete
+#         'most_recent', 
+#         'most_recent_file_number',    # Delete
+#         'net_contributions_period', 
+#         'net_contributions_ytd',
+#         'net_operating_expenditures_period', 
+#         'net_operating_expenditures_ytd',
+#         'non_allocated_fed_election_activity_period',
+#         'non_allocated_fed_election_activity_ytd',
+#         'nonfed_share_allocated_disbursements_period',
+        'offsets_to_operating_expenditures_period',    # R
+#         'offsets_to_operating_expenditures_ytd',
+#         'operating_expenditures_period',    # S 
+#         'operating_expenditures_ytd',
+#         'other_disbursements_period',    # S
+#         'other_disbursements_ytd',
+#         'other_fed_operating_expenditures_period',
+#         'other_fed_operating_expenditures_ytd', 
+#         'other_fed_receipts_period',
+#         'other_fed_receipts_ytd',
+        'other_political_committee_contributions_period',    # R
+#         'other_political_committee_contributions_ytd', 
+        'other_receipts_period',    # R
+#         'other_receipts_ytd', 
+#         'pdf_url',    # Delete
+        'political_party_committee_contributions_period',    # R
+#         'political_party_committee_contributions_ytd', 
+#         'previous_file_number',    # Delete
+#         'receipt_date', 
+#         'refunded_individual_contributions_period',    # S
+#         'refunded_individual_contributions_ytd',
+#         'refunded_other_political_committee_contributions_period',    # S
+#         'refunded_other_political_committee_contributions_ytd',
+#         'refunded_political_party_committee_contributions_period',    # S
+#         'refunded_political_party_committee_contributions_ytd',
+#         'refunds_total_contributions_col_total_ytd', 
+#         'report_form',    # Delete
+        'report_type', 
+#         'report_type_full',    # Delete
+        'report_year', 
+#         'shared_fed_activity_nonfed_ytd',
+#         'shared_fed_activity_period', 
+#         'shared_fed_activity_ytd',
+#         'shared_fed_operating_expenditures_period',
+#         'shared_fed_operating_expenditures_ytd',
+#         'shared_nonfed_operating_expenditures_period',
+#         'shared_nonfed_operating_expenditures_ytd', 
+#         'subtotal_period',
+#         'subtotal_summary_page_period',
+#         'subtotal_summary_ytd',
+#         'total_contribution_refunds_col_total_period',
+#         'total_contribution_refunds_period',   # S
+#         'total_contribution_refunds_ytd',
+#         'total_contributions_column_total_period', 
+        'total_contributions_period',    # R
+#         'total_contributions_ytd', 
+#         'total_disbursements_period',    # S
+#         'total_disbursements_ytd', 
+#         'total_fed_disbursements_period',
+#         'total_fed_disbursements_ytd', 
+#         'total_fed_election_activity_period',
+#         'total_fed_election_activity_ytd',
+#         'total_fed_operating_expenditures_period',
+#         'total_fed_operating_expenditures_ytd', 
+#         'total_fed_receipts_period',
+#         'total_fed_receipts_ytd',
+        'total_individual_contributions_period',    # R
+#         'total_individual_contributions_ytd',
+#         'total_loan_repayments_made_period',    # S
+#         'total_loan_repayments_made_ytd',
+        'total_loans_received_period',    # R
+#         'total_loans_received_ytd',
+#         'total_nonfed_transfers_period',
+#         'total_nonfed_transfers_ytd',
+#         'total_offsets_to_operating_expenditures_period',
+#         'total_offsets_to_operating_expenditures_ytd',
+#         'total_operating_expenditures_period',
+#         'total_operating_expenditures_ytd', 
+        'total_receipts_period',    # R
+#         'total_receipts_ytd',
+#         'transfers_from_affiliated_party_period',
+#         'transfers_from_affiliated_party_ytd',
+#         'transfers_from_nonfed_account_period',
+#         'transfers_from_nonfed_account_ytd',
+#         'transfers_from_nonfed_levin_period', 
+#         'transfers_from_nonfed_levin_ytd',
+        'transfers_from_other_authorized_committee_period',    # R
+#         'transfers_from_other_authorized_committee_ytd',
+#         'transfers_to_affiliated_committee_period',
+#         'transfers_to_affilitated_committees_ytd',
+#         'transfers_to_other_authorized_committee_period',    # S
+#         'transfers_to_other_authorized_committee_ytd', 
+#         'candidate_id',    # not included
+#         'candidate_name',    # not included
+#         'candidate_pcc_id',    # not included
+#         'candidate_pcc_name',    # not included
+#         'incumbent_challenge_full',    # not included
+#         'party_full'    # not included
+    ]

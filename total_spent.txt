@@ -1,0 +1,43 @@
+** TOTAL SPENT **
+
+OPERATING EXPENDITURES
+	operating_expenditures_period
+
+TRANSFERS TO OTHER AUTHORIZED COMMITTEES
+	transfers_to_other_authorized_committee_period
+
+TOTAL CONTRIBUTION REFUNDS
+1. Individual refunds
+	refunded_individual_contributions_period
+2. Political party refunds
+	refunded_political_party_committee_contributions_period
+3. Other committee refunds
+	refunded_other_political_committee_contributions_period
+
+Total Refunds
+	total_contribution_refunds_period =
+	refunded_individual_contributions_period +
+	refunded_political_party_committee_contributions_period +
+	refunded_other_political_committee_contributions_period
+
+TOTAL LOAN REPAYMENTS
+1. Candidate load repayments
+	loan_repayments_candidate_loans_period
+2. Other loan repayments
+	loan_repayments_other_loans_period
+
+Total Loan Repayments
+	total_loan_repayments_made_period =
+	loan_repayments_candidate_loans_period +
+	loan_repayments_other_loans_period
+
+OTHER DISBURSEMENTS
+	other_disbursements_period
+
+** Total Disbursements **
+	total_disbursements_period =
+	operating_expenditures_period +
+	transfers_to_other_authorized_committee_period +
+	total_contribution_refunds_period +
+	total_loan_repayments_made_period +
+	other_disbursements_period
